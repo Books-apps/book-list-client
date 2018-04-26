@@ -12,18 +12,37 @@
     <link rel="stylesheet" href="styles/fonts/icomoon.svg">
     <link rel="stylesheet" href="styles/fonts/icomoon.ttf">
     <link rel="stylesheet" href="styles/fonts/icomoon.woff">
-
+    
+    <script id="book-template" type="text/x-handlebars-template">
+      <section class="container" data-author="{{author}}">
+        <img src={{img}}>
+        <h1>{{title}}</h1>
+        <h2>{{author}}</h2>
+        <button>view details</button>
+      </section>
+    </script>
   </head>
 
-  <header>
-    <p>Thumbs?</p>
-  </header>
-
   <body>
-    <p>More Thumbs?</p>
-  </body>
 
-  <footer>
-    <p>All Thumbs?</p>
-  </footer>
+  <section class="container" id="add-book">
+    <p>Thumbers</p>
+  </section>
+
+  <section class="container" id="about-view">
+    <p>Thumbies</p>
+  </section>
+
+ <section class="container" id="error-view">
+   <p>Error Thumbers</p>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <!-- load with js -->
+ </section>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.amd.js">
+   </script>
+  </body>
+  
 </html>
